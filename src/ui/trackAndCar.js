@@ -9,13 +9,13 @@ export function createTrackAndCar(data, idx){
 	let trackSectionContent = `
 				<div class="track-button-block">
 					<button class=" button track-select-button">Select</button>
-					<button class=" button track-select-button">Remove</button>
-					<h3 class="car-title">${data[idx].name}</h3>
+					<button class=" button track-remove-button">Remove</button>
+					<h3 class="car-title">${data[idx].name} ${data[idx].id}</h3>
 				</div>
 				<div class="track-container">
 					<div class="car-control-block">
-						<button class="control-button engine-button">A</button>
-						<button class="control-button stop-button">B</button>
+						<button class="button control-button engine-button"id = ${data[idx].id}start>A</button>
+						<button class="button control-button stop-button" ${data[idx].id}stop>B</button>
 					</div>
 					<div class="track">
 						<div class="car" id = "${data[idx].id}car">
@@ -121,7 +121,9 @@ export function createTrackAndCar(data, idx){
 							</g>
 							</svg>
 						</div>
-						<div class="finish-flag"></div>
+						<div class="finish-flag">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#000" fill-rule="evenodd" d="M214 7611h4v-4h-4v4zm-4-4h4v-4h-4v4zm4-4h4v-4h-4v4zm8-4v4h-4v4h4v4h2v-12h-2zm-16 8h4v4h-4v8h-2v-20h6v4h-4v4z" transform="translate(-204 -7599)"/></svg>
+						</div>
 					</div>					
 				</div>
 	`

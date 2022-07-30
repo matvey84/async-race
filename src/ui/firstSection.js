@@ -3,7 +3,6 @@ export function firstSection () {
   let firstSection = document.createElement('section')
 	firstSection.classList.add('first-section');
 	const firstSectionLayout = `
-	<div class="first-section-container">
 			<div class="first-section-form-container">
 				<div class="first-section-form">
 					<div class="first-section-form-create-car-block">
@@ -17,12 +16,11 @@ export function firstSection () {
 						<button class="button change-car-button">Change car </button>
 					</div>
 					<div class= "race-management-button-block">
-						<button class="button start-race">Race</button>
+						<button class="button start-race-button">Race</button>
 						<button class="button reset-button">Reset</button>
 						<button class="button create-more-cars-button">Create cars</button>
 					</div>
 				</div>
-			</div>
 	`
 	firstSection.insertAdjacentHTML('afterbegin', firstSectionLayout )
 	return firstSection

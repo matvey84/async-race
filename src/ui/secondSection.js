@@ -16,7 +16,7 @@ export function secondSection (data) {
 		secondSectionContainer.append(createTrackAndCar(data, i))
 		
 	}
-	secondSection.insertAdjacentHTML('afterbegin', infoBlock)
+	secondSectionContainer.insertAdjacentHTML('afterbegin', infoBlock)
 	secondSection.append(secondSectionContainer)
 	document.querySelector('.wrapper').append(secondSection)
 
